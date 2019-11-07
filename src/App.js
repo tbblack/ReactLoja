@@ -1,14 +1,16 @@
 import React, { Component } from 'react';
 import './App.css';
+import logo from './Logo.PNG' ;
+import logoF from './LogoF.PNG';
 
 
 class App extends Component {  
   render() {
     return (
       <div className="container-fluid">
-        <nav className="navbar navbar-light bg-warning">
-          <h1>Loja do jão Celulares AND Acessorios</h1>
+        <nav className="navbar navbar-light">
 
+          <img src={logo} alt=" Logo" />
            <form className="form-inline">
              <input className="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar" />
              <i className="fas fa-search btn"></i>
@@ -34,8 +36,8 @@ class App extends Component {
            </form>
         </nav>
 
-      <footer className="footer bg-warning text-center">
-        <h1>Loja do jão Porque aqui tem coragem!</h1>
+      <footer className="footer text-center">
+      <img src={logoF} alt=" LogoF " id='logo-footer-id' className="img-fluid" />
       </footer>
 
       </div>
